@@ -25,10 +25,9 @@ html.fp-enabled,
 }
 .fp-slide {
     float: left;
-}
-.fp-slide, .fp-slidesContainer {
-    height: 100%;
-    display: block;
+    .fp-slidesContainer {
+        height: 100%;
+        display: block;}
 }
 .fp-slides {
     z-index:1;
