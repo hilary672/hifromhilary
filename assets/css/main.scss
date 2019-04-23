@@ -1,6 +1,5 @@
 $fonts: 'Source Sans Pro', Open Sans, Helvetica, Arial, sans-serif;
 $radius: 6px;
-$button-radius: 50px;
 
 $shadow: 0px 20px 30px rgba(56,59,83,.1);
 $shadow-light: 0px 15px 30px rgba(146,175,215,.4);
@@ -44,24 +43,17 @@ $white: #ffffff;
 /* import grid */
 
 @import "flexboxgrid";
-@import "../slick/slick";
-@import "../slick/slick-theme";
+@import "slick";
+@import "slick-theme";
 
 .center {
     justify-content: center !important;}
-
-
 
 @mixin border-radius {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;}
-@mixin button-radius {
-  -webkit-border-radius: $button-radius;
-     -moz-border-radius: $button-radius;
-      -ms-border-radius: $button-radius;
-          border-radius: $button-radius;}
 @mixin shadow {
   -webkit-box-shadow: $shadow;
      -moz-box-shadow: $shadow;
@@ -125,6 +117,7 @@ $white: #ffffff;
     transform: translateY(-3px);}
 @mixin opacity{
     opacity: .6;}
+
 body {
     font: 100% $fonts;
     font-weight: 400;
@@ -154,7 +147,14 @@ body {
     @include transition;}
 }
 
+/* Horizontal Scrolling Flex */
+.horizontal{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
 
+/* Images & Heros */
 .bg-image {
     background-size: cover;
     background-position: center;
@@ -360,7 +360,7 @@ opacity: 1; /* Firefox */
 /*button white*/
 .button-white {
     @include slow-transition;
-    @include button-radius;
+    @include border-radius;
     @include shadow-light;
     background: $white;
     padding: 15px 50px;
@@ -385,7 +385,7 @@ opacity: 1; /* Firefox */
 /*button outline*/
 .button-outline {
     @include slow-transition;
-    @include button-radius;
+    @include border-radius;
     @include shadow-light;
     background: rgba($white, 0);
     border: 1px solid $white;
@@ -412,7 +412,7 @@ opacity: 1; /* Firefox */
 /*button dark*/
 .button-secondary {
     @include slow-transition;
-    @include button-radius;
+    @include border-radius;
     background: $secondary;
     padding: 15px 50px;
     position:relative;
@@ -435,7 +435,7 @@ opacity: 1; /* Firefox */
 /*button */
 .button {
     @include slow-transition;
-    @include button-radius;
+    @include border-radius;
     padding: 15px 50px;
     position:relative;
     border: none;
@@ -486,9 +486,7 @@ opacity: 1; /* Firefox */
 .relative {
     position: relative;
 }
-.no-overflow {
-    overflow: hidden;
-}
+
 
 .rise{
     @include transition;}
@@ -559,9 +557,20 @@ i.material-icons {
 .right-align {
 	align-content: flex-end;
     text-align: right;}
-.no-padding{padding: 0 !important;}
-.no-margin{margin: 0 !important;}
-.no-bottom-padding {padding-bottom: 0 !important;}
+.no-padding{
+    padding: 0 !important;}
+.no-margin{
+    margin: 0 !important;}
+.no-bottom-padding {
+    padding-bottom: 0 !important;}
+.no-top-padding {
+    padding-top: 0 !important;}
+.no-left-padding {
+    padding-left: 0 !important;}
+.no-right-padding {
+    padding-right: 0 !important;}
+.no-overflow {
+    overflow: hidden;}
 
 .xs-padding{
     padding: $xs; }
