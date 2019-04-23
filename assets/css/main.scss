@@ -149,8 +149,10 @@ body {
 
 /* Horizontal Scrolling Flex */
 .horizontal{
-    flex-direction: row;
     flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
     overflow-x: auto;
 }
 
