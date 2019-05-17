@@ -49,5 +49,26 @@
         </div>
     </div>
     
+    
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling:true,
+            scrollHorizontally: true,
+            //navigation
+            menu: '#menu',
+            lockAnchors: false,
+            anchors:['firstPage', 'secondPage'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['firstSlide', 'secondSlide'],
+            showActiveTooltip: true,
+            slidesNavigation: false,
+            slidesNavPosition: 'bottom'
+        });
+        //methods
+        fullpage_api.setAllowScrolling(false);
+
+    </script>
 </body>
 </html>
