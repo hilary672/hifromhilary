@@ -24,16 +24,23 @@
     <meta name="twitter:card" content="summary_large_image">
     <!-- links & scripts -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" /> 
-    <link rel="stylesheet" type="text/css" href="fullpage.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/fullpage.js"></script>
-    
+    <link rel="stylesheet" type="text/css" href="assets/css/fullpage.css" />
     
 </head>
 <body>
     
     <div class="">
+        <div class="absolute">
+                 <ul id="menu">
+                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Hilary Hampton</a></li>
+                <li data-menuanchor="secondPage" class=""><a href="#secondPage">Edison Software</a></li>
+                <li data-menuanchor="thirdPage" class=""><a href="#thirdPage">Left Hook Design</a></li>
+                <li data-menuanchor="fourthPage"><a href="#fourthPage">Project Four</a></li>
+            </ul>
+        </div>
         <div id="fullpage">
             <div class="section primary-bg">
                 <div class="sm-padding white-color">
@@ -43,7 +50,19 @@
             </div>
             <div class="section secondary-bg">
                 <div class="sm-padding">
-                    <h1>Hilary Hampton</h1>
+                    <h1>Edison Software</h1>
+                    <h2>Subtitle goes here tbd irl.</h2>
+                </div>
+            </div>
+            <div class="section primary-bg">
+                <div class="sm-padding">
+                    <h1>Left Hook Design</h1>
+                    <h2>Subtitle goes here tbd irl.</h2>
+                </div>
+            </div>
+            <div class="section secondary-bg">
+                <div class="sm-padding">
+                    <h1>Fourth Slide</h1>
                     <h2>Subtitle goes here tbd irl.</h2>
                 </div>
             </div>
@@ -59,15 +78,16 @@
             //navigation
             menu: '#menu',
             lockAnchors: false,
-            anchors:['firstPage', 'secondPage'],
+            anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', ],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['firstSlide', 'secondSlide'],
+            navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide',],
             showActiveTooltip: true,
-            slidesNavigation: false,
+            slidesNavigation: true,
             slidesNavPosition: 'bottom',
             //more
-            fadingEffect: true
+            fadingEffect: true,
+            fadingEffect:'sections'
         });
         //methods
         fullpage_api.setAllowScrolling(false);
