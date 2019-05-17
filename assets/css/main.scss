@@ -225,16 +225,28 @@ h5 {
 .italic{
     font-style: italic;}
 
-//links
+//links & navigation
 .main-menu {
+    overflow: hidden;
     a {
         @include transition;
-        font-size: 2em;
+        font-size: 4em;
+        line-height: 1.5em;
+        padding: 10px 20px;
+        color: $white;
+        opacity: .5;
+        
     }
     a:hover {
         @include transition;
+        color: $bright;
+        opacity: .7;
     }
-    
+    li.active a{
+        @include transition;
+        color: $white;
+        opacity: 1;
+    }
 }
 
 a {
@@ -245,8 +257,8 @@ a {
     text-decoration: none;}
 a:hover {
     @include slow-transition;
-    color: $dark !important;}
-
+    text-transform: underline;
+}
 
 a.tile:hover{
     @include rise;
@@ -526,11 +538,11 @@ i.material-icons {
   padding-bottom: 240px;}
 
 /* padding and margins */
-.vertical-align {
+.vertical-center {
 	margin: auto 0;}
-.center-align {
+.center {
 	margin: auto;}
-.right-align {
+.right {
 	align-content: flex-end;
     text-align: right;}
 

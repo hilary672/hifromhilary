@@ -3354,13 +3354,26 @@ h5 {
 .italic {
   font-style: italic; }
 
-.main-menu a {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  font-size: 2em; }
-.main-menu a:hover {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
+.main-menu {
+  overflow: hidden; }
+  .main-menu a {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-size: 4em;
+    line-height: 1.5em;
+    padding: 10px 20px;
+    color: #ffffff;
+    opacity: .5; }
+  .main-menu a:hover {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: #ff6acf;
+    opacity: .7; }
+  .main-menu li.active a {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: #ffffff;
+    opacity: 1; }
 
 a {
   -webkit-transition: all .5s ease-in-out;
@@ -3373,7 +3386,7 @@ a {
 a:hover {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  color: #04080f !important; }
+  text-transform: underline; }
 
 a.tile:hover {
   position: relative;
@@ -3732,13 +3745,13 @@ i.material-icons {
   padding-bottom: 240px; }
 
 /* padding and margins */
-.vertical-align {
+.vertical-center {
   margin: auto 0; }
 
-.center-align {
+.center {
   margin: auto; }
 
-.right-align {
+.right {
   align-content: flex-end;
   text-align: right; }
 
