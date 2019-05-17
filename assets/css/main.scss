@@ -181,45 +181,7 @@ body {
     background-position: bottom center; 
     background-size: contain;}
 
-/* navigation */
-.nav {
-    @include transition;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    background:  rgba($white,0);
-    
-    a{
-        @include transition;
-        color: $white;
-        padding: 0;
-        background: rgba(#ffffff, 0);}
-    a:hover{
-        @include transition;
-        color: $primary !important;
-        padding: 5px 10px;
-        @include border-radius;
-        background: rgba(#ffffff, 1);}
-}
-.nav-link {
-    padding: 8px 20px;
-    margin: auto;
-    text-transform: capitalize;
-}
-.scrolled {
-    @include transition;
-    background: rgba($white,.95);
-    box-shadow: 0px 2px 25px rgba(4, 8, 15, 0.05);
-    a{
-        @include transition;
-        color: $secondary !important;}
-    a:hover{
-        @include transition;
-        color: $bright !important;}
-}
+
 
 /* text and headers */
 h2, h3 {
@@ -262,9 +224,22 @@ h5 {
     text-transform: uppercase;}
 .italic{
     font-style: italic;}
+
+//links
+.main-menu {
+    a {
+        @include transition;
+        font-size: 2em;
+    }
+    a:hover {
+        @include transition;
+    }
+    
+}
+
 a {
     @include transition;
-    color: $primary;
+    color: $bright;
     font-weight: 600;
     font-size: inherit;
     text-decoration: none;}
@@ -558,10 +533,24 @@ i.material-icons {
 .right-align {
 	align-content: flex-end;
     text-align: right;}
-.no-padding{
-    padding: 0 !important;}
+
 .no-margin{
     margin: 0 !important;}
+
+.xs-margin{
+    margin: $xs; }
+.sm-margin{
+    margin: $sm; }
+.md-margin{
+    margin: $md; }
+.lg-margin{
+    margin: $lg; }
+.xl-margin{
+    margin: $xl; }
+
+.no-padding{
+    padding: 0 !important;}
+
 .no-bottom-padding {
     padding-bottom: 0 !important;}
 .no-top-padding {

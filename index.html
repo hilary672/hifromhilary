@@ -33,12 +33,12 @@
 <body>
     
     <div class="">
-        <div class="absolute">
-                 <ul id="menu">
-                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Hilary Hampton</a></li>
-                <li data-menuanchor="secondPage" class=""><a href="#secondPage">Edison Software</a></li>
-                <li data-menuanchor="thirdPage" class=""><a href="#thirdPage">Left Hook Design</a></li>
-                <li data-menuanchor="fourthPage"><a href="#fourthPage">Project Four</a></li>
+        <div class="main-menu absolute full-width full-height centered-text">
+            <ul id="menu">
+                <li data-menuanchor="Hello, World" class="active"><a href="#firstPage">Hilary Hampton</a></li>
+                <li data-menuanchor="Edison" class=""><a href="#secondPage">Edison Software</a></li>
+                <li data-menuanchor="Left Hook" class=""><a href="#thirdPage">Left Hook Design</a></li>
+                <li data-menuanchor="Project Four" class=""><a href="#fourthPage">Project Four</a></li>
             </ul>
         </div>
         <div id="fullpage">
@@ -87,7 +87,8 @@
             slidesNavPosition: 'bottom',
             //more
             fadingEffect: true,
-            fadingEffect:'sections'
+            fadingEffect:'sections',
+            scrollBar: true
         });
         //methods
         fullpage_api.setAllowScrolling(false);
