@@ -3374,6 +3374,10 @@ h5 {
 .main-menu .active-styles {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  -webkit-transition-delay: 1s;
+  /* Safari Delay */
+  transition-delay: 1s;
+  /* Delay */
   opacity: 1;
   font-size: 4.75em; }
 
