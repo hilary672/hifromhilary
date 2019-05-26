@@ -118,8 +118,10 @@
     
     <script>
     $(document).ready(function(){ 
-        $('#menu li.active a').addClass('active-styles'); 
+        $('#menu li.active a').addClass('active-styles').delay( 1600 ).queue(function () {; 
+            $('#menu li.active a').addClass('active-styles')
     });
+    //$( "#foo" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
     </script>
     <script>
         new fullpage('#fullpage', {
