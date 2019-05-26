@@ -231,7 +231,7 @@ h5 {
     list-style-type: none !important;
 }
 .main-menu {
-    a {
+    li a {
         @include transition;
         font-size: 2.5em;
         line-height: 1.5em;
@@ -244,11 +244,10 @@ h5 {
         color: $bright;
         opacity: 1;
     }
-    li.active a{
+    .active-styles{
         @include transition;
-        color: $white;
         opacity: 1;
-        font-size: 4.5em;
+        font-size: 4.75em;
     }
 }
 
