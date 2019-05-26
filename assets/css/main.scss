@@ -226,6 +226,10 @@ h5 {
     font-style: italic;}
 
 //links & navigation
+#menu {
+    max-width: 600; 
+    list-style-type: none !important;
+}
 .main-menu {
     a {
         @include transition;
@@ -238,7 +242,7 @@ h5 {
     a:hover {
         @include transition;
         color: $bright;
-        opacity: .7;
+        opacity: 1;
     }
     li.active a{
         @include transition;

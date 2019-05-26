@@ -164,7 +164,7 @@ html.fp-enabled,
     width: 12px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
-    background: #92afd7;
+    background: #fff;
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -174,7 +174,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: #333;
+    background: rgba(255,255,255,0.3);
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
@@ -193,13 +193,14 @@ html.fp-enabled,
     position: absolute;
     top: -6px;
     color: #eee;
-    font-size: 3em;
+    font-size: 10px;
+    text-transform: uppercase;
     font-family: 'Source Sans Pro', Open Sans, Helvetica, Arial, sans-serif;
     white-space: nowrap;
     max-width: 220px;
     overflow: hidden;
     display: block;
-    opacity: .2;
+    opacity: .3;
     width: 0;
     cursor: pointer;
 }
@@ -211,10 +212,10 @@ html.fp-enabled,
     opacity: 1;
 }
 #fp-nav ul li .fp-tooltip.fp-right {
-    right: 30px;
+    right: 20px;
 }
 #fp-nav ul li .fp-tooltip.fp-left {
-    left: 30px;
+    left: 20px;
 }
 .fp-auto-height.fp-section,
 .fp-auto-height .fp-slide,

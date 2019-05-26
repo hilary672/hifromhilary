@@ -3354,6 +3354,10 @@ h5 {
 .italic {
   font-style: italic; }
 
+#menu {
+  max-width: 600;
+  list-style-type: none !important; }
+
 .main-menu a {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -3366,7 +3370,7 @@ h5 {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   color: #ff6acf;
-  opacity: .7; }
+  opacity: 1; }
 .main-menu li.active a {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
