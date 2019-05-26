@@ -3354,26 +3354,25 @@ h5 {
 .italic {
   font-style: italic; }
 
-.main-menu {
-  overflow: hidden; }
-  .main-menu a {
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    font-size: 4em;
-    line-height: 1.5em;
-    padding: 10px 20px;
-    color: #ffffff;
-    opacity: .5; }
-  .main-menu a:hover {
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    color: #ff6acf;
-    opacity: .7; }
-  .main-menu li.active a {
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    color: #ffffff;
-    opacity: 1; }
+.main-menu a {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  padding: 10px 20px;
+  color: #ffffff;
+  opacity: .5; }
+.main-menu a:hover {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #ff6acf;
+  opacity: .7; }
+.main-menu li.active a {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #ffffff;
+  opacity: 1;
+  font-size: 4em; }
 
 a {
   -webkit-transition: all .5s ease-in-out;
@@ -3625,28 +3624,9 @@ input, textarea {
   border-radius: 6px;
   background: #fff; }
 
-.more {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  color: #fff !important;
-  background: #383b53; }
-
-.box:hover .more {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  opacity: 1; }
-
 .absolute {
   display: block;
-  position: absolute;
-  z-index: 2; }
+  position: absolute; }
 
 .relative {
   position: relative; }

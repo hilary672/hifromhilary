@@ -26,32 +26,29 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" /> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <script type="text/javascript" src="assets/js/fullpage.fadingEffect.min.js"></script>
-    <script type="text/javascript" src="assets/js/fullpage.extensions.min.js"></script>
+    <script type="text/javascript" src="assets/js/fullpage.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/fullpage.css" />
     
 </head>
 <body>
     
     <div class="">
+        <div class="main-menu absolute full-width full-height centered-text" style="z-index: 20;">
+            <div class="row full-width full-height">
+                <div class="center">
+                <ul id="menu" style="list-style-type: none !important;">
+                    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Hilary Hampton</a></li>
+                    <li data-menuanchor="secondPage" class=""><a href="#secondPage">Edison Software</a></li>
+                    <li data-menuanchor="thirdPage" class=""><a href="#thirdPage">Left Hook Design</a></li>
+                    <li data-menuanchor="fourthPage" class=""><a href="#fourthPage">Project Four</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
         <div id="fullpage">
-            <div class="section primary-bg white">
-                <div class="slide main-menu centered-text" data-anchor="navSlide">
-                    <div class="full-width full-height row">
-                        <ul id="menu" class="center" style="max-width: 600;  list-style-type: none !important;">
-                            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Hilary Hampton</a></li>
-                            <li data-menuanchor="secondPage" class=""><a href="#secondPage">Edison Software</a></li>
-                            <li data-menuanchor="thirdPage" class=""><a href="#thirdPage">Left Hook Design</a></li>
-                            <li data-menuanchor="fourthPage" class=""><a href="#fourthPage">Project Four</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="slide" data-anchor="slide1">
-                    <h1>slide 2</h1>
-                </div>
-                <div class="slide" data-anchor="slide1">
-                    <h1>slide 3</h1>
+            <div class="section primary-bg">
+                <div class="sm-padding white">
+                    <h1></h1>
                 </div>
             </div>
             <div class="section dark-bg">
@@ -68,26 +65,14 @@
                     <h1>slide 4</h1>
                 </div>
             </div>
-            <div class="section primary-bg white">
-                <div class="slide centered-text" data-anchor="slide1">
-                    <h1>slide 1</h1>
-                </div>
-                <div class="slide" data-anchor="slide1">
-                    <h1>slide 2</h1>
-                </div>
-                <div class="slide" data-anchor="slide1">
-                    <h1>slide 3</h1>
+            <div class="section primary-bg">
+                <div class="sm-padding">
+                    <h1></h1>
                 </div>
             </div>
             <div class="section dark-bg">
-                <div class="slide centered-text" data-anchor="slide1">
-                    <h1>slide 1</h1>
-                </div>
-                <div class="slide" data-anchor="slide1">
-                    <h1>slide 2</h1>
-                </div>
-                <div class="slide" data-anchor="slide1">
-                    <h1>slide 3</h1>
+                <div class="sm-padding">
+                    <h1></h1>
                 </div>
             </div>
         </div>
@@ -98,14 +83,12 @@
     
     <script>
         new fullpage('#fullpage', {
-            fadingEffectKey: 'aGlmcm9taGlsYXJ5LmNvbV81ZkNabUZrYVc1blJXWm1aV04wN3Qy',
-            fadingEffect: 'sections',
             //options here
             autoScrolling:true,
             scrollHorizontally: true,
             //navigation
             anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
-            //menu: '#menu',
+            menu: '#menu',
             lockAnchors: false,
             navigation: true,
             navigationPosition: 'left',
@@ -115,7 +98,8 @@
             controlArrows: true,
             slidesNavPosition: 'bottom',
             //more
-            lazyLoading: true,
+            fadingEffect: true,
+            fadingEffect:'sections',
         });
         //disabling scrolling
         //fullpage_api.setAllowScrolling(false);
