@@ -119,14 +119,8 @@
     
 
     <script>
-    $('.slide.active').ready(function() {
-        if ($('#menu li a').hasClass('active')){
-            $('#menu li a').removeClass('active-styles'); 
-        } else {
-            $('#menu li a').addClass('active-styles');
-          }
-    });
-    //$( "#foo" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
+    $("section.active").ready(function(){ 
+        $( "#menu li.active a" ).delay( 3200 ).addClass( 'active-styles' ); 
     </script>
     <script>
         new fullpage('#fullpage', {
