@@ -119,12 +119,12 @@
     
 
     <script>
-    $("section.active").ready(function(){ 
-        //$( "#menu li.active a" ).delay( 1600 ).addClass( 'active-styles' ); 
-        if ($("#menu li").hasClass("active")) {
-           $("#menu li a").addClass("active-styles");
-        } 
-        
+    $('.slide.active').ready(function() {
+        if ($('#menu li a').hasClass('active')){
+            $('#menu li a').removeClass('active-styles'); 
+        } else {
+            $('#menu li a').addClass('active-styles');
+          }
     });
     //$( "#foo" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
     </script>
