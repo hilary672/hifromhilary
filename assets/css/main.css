@@ -3361,7 +3361,7 @@ h5 {
 .main-menu li a {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  font-size: 2.5em;
+  font-size: 4em;
   line-height: 1.5em;
   padding: 10px 20px;
   color: #ffffff;
@@ -3374,8 +3374,7 @@ h5 {
 .main-menu .active-styles {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  opacity: 1;
-  font-size: 4.75em; }
+  opacity: 1; }
 
 a {
   -webkit-transition: all .5s ease-in-out;
