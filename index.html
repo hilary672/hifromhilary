@@ -119,9 +119,14 @@
     
 
     <script>
-    $("#menu li.active").click(function(){ 
-        $( "#menu li.active a" ).delay( 1600 ).addClass( 'active-styles' ); 
-        //$("#menu").hasClass("active")
+    $("section.active").ready(function(){ 
+        //$( "#menu li.active a" ).delay( 1600 ).addClass( 'active-styles' ); 
+        if ($("#menu li").hasClass("active")) {
+           $("#menu li a").addClass("active-styles");
+        } else { 
+          //  block of code to be executed if the condition is false
+        }
+        
     });
     //$( "#foo" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
     </script>
