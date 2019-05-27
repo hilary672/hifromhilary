@@ -246,8 +246,6 @@ h5 {
     }
     .active-styles{
         @include transition;
-        -webkit-transition-delay: 1s; /* Safari Delay */
-        transition-delay: 1s; /* Delay */
         opacity: 1;
         font-size: 4.75em;
     }
