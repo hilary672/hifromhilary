@@ -233,7 +233,7 @@ h5 {
 .main-menu {
     li a {
         @include transition;
-        font-size: 2.5em;
+        font-size: 4em;
         line-height: 1.5em;
         padding: 10px 20px;
         color: $white;
@@ -247,7 +247,6 @@ h5 {
     .active-styles{
         @include transition;
         opacity: 1;
-        font-size: 4.75em;
     }
 }
 
