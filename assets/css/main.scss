@@ -185,16 +185,18 @@ body {
 
 /* text and headers */
 h2, h3 {
-  margin: 1.3 0 0.5em;
+    margin: 1.3 0 0.5em;
     line-height: 1.15em;
-  font-family: 'Montserrat';
-  width: 100%;}
+    font-family: 'Montserrat';
+    font-weight:700;
+    width: 100%;
+}
 h4, h5, h6, {
-  color: $primary;
-  margin: 1.3 0 0.5em;
+    color: $primary;
+    margin: 1.3 0 0.5em;
     line-height: 1.15em;
-  font-weight:700;
-  width: 100%;}
+    width: 100%;
+}
 h1 {
     font-size: 4em;
     line-height: 1.5em;
@@ -202,7 +204,6 @@ h1 {
 }
 h2 {
   font-size: 2.5em;
-    font-weight: 200;
 }
 h3 {
   font-size: 1.414em/*1.999em*/;
@@ -232,24 +233,28 @@ h5 {
 
 //links & navigation
 #menu {
-    max-width: 600; 
     list-style-type: none !important;
-}
-.main-menu {
-    li a {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    
+    li {
+        a {
         @include transition;
-        font-size: 4em;
+        font-size: 1em;
         line-height: 1.5em;
         padding: 10px 20px;
         color: $white;
-        opacity: .5;
+        opacity: .37;
+        }
+        a:hover {
+            @include transition;
+            color: $bright;
+            opacity: 1;
+        }
     }
-    a:hover {
-        @include transition;
-        color: $bright;
-        opacity: 1;
-    }
-    .active-styles{
+    li.active a{
         @include transition;
         opacity: 1;
     }
