@@ -3324,8 +3324,7 @@ h2 {
 
 h3 {
   font-size: 1.414em;
-  font-weight: 800;
-  text-transform: uppercase; }
+  font-weight: 400; }
 
 h4 {
   font-size: 1.414em;
@@ -3365,7 +3364,7 @@ h5 {
     font-size: 1em;
     line-height: 1.5em;
     padding: 10px 20px;
-    color: #ffffff;
+    color: #04080f;
     opacity: .37; }
   #menu li a:hover {
     -webkit-transition: all .5s ease-in-out;
@@ -3866,6 +3865,10 @@ i.material-icons {
 .icon-20 {
   width: 20px;
   height: 20px; }
+
+.icon-30 {
+  width: 30px;
+  height: 30px; }
 
 .icon-40 {
   width: 40px;

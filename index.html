@@ -26,7 +26,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" /> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+    <link rel="stylesheet" type="text/css" href="assets/css/simpletextrotator.css"/>
+    <script type="text/javascript" src="assets/js/jquery.simple-text-rotator.js"></script> 
     <script type="text/javascript" src="assets/js/fullpage.fadingEffect.min.js"></script>
     <script type="text/javascript" src="assets/js/fullpage.extensions.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/fullpage.css" />
@@ -42,15 +43,16 @@
             <li data-menuanchor="4contact" class="inline"><a href="#4contact" class="">Contact</a></li>
         </ul>
         <div id="fullpage"> 
-            <div class="section dark-bg primary">
+            <div class="section white-bg primary">
                 <div class="slide" data-anchor="1about">
-                    <div class="max-width centered-text">
+                    <div class="row middle lg-padding">
                         <h1>Hi, I'm Hilary.</h1>
+                        <h3>I'm a <span class="rotate">designer, frontend developer, creative director, nature lover, badass</span></h3>
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="max-width row">
-                        <div class="xs-12 sm-7">
+                    <div class="sm-max-width row">
+                        <div class="md-padding">
                             <h2>So, about me...</h2>
                             <p>I spend my nine‑to‑five designing ___. After hours I love working with brands, and clients of all backgrounds. The rest of my time is spent in the beautiful Pacific Northwest (just outside Portland, OR). Home is where my pets are (dogs and cats) and I'm an outdoor junky who loves unplugging to spend some time in nature. I grew up in Northern California backpacking, hiking, skiing, and swimming. The only sport I follow religiously is motorcycle racing, and I learned to ride my own dirtbike when I was eleven. I believe great things never come from comfort zones, and good things come to those who hustle. I was blessed with amazing oopportunities that allowed me to learn my industry top‑to‑bottom.</p>
                         </div>
@@ -64,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section dark-bg">
+            <div class="section white-bg">
                 <div class="slide" data-anchor="2edison">
                     <div class="max-width">
                         <h1>Edison Software</h1>
@@ -86,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section dark-bg primary">
+            <div class="section white-bg primary">
                 <div class="slide" data-anchor="3lefthook">
                     <div class="max-width">
                         <h1>Left Hook</h1>
@@ -103,19 +105,26 @@
                     </div>
                 </div>
             </div>
-            <div class="section dark-bg">
+            <div class="section white-bg">
                 <div class="slide" data-anchor="4contact">
                     <div class="max-width">
                         <h1>Contact</h1>
-                        <p><b>Instagram</b> @hifromhilary</p>
-                        <p><b>LinkedIn</b> /hilary-hampton</p>
-                        <p><b>Facebook</b> /hilaryhampton672</p>
-                        <p><b>Twitter</b> @hifromhilary</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="max-width">
-                        <h1>slide 2</h1>
+                        <div class="row middle">
+                            <img class="inline icon-30 xs-padding" src="assets/img/icon-insta-black.svg">
+                            <p class="inline sm-left-padding"><b>Instagram</b> @hifromhilary</p>
+                        </div>
+                        <div class="row middle">
+                            <img class="inline icon-30 xs-padding" src="assets/img/icon-linkedin-black.svg">
+                            <p class="inline sm-left-padding"><b>LinkedIn</b> /hilary-hampton</p>
+                        </div>
+                        <div class="row middle">
+                            <img class="inline icon-30 xs-padding" src="assets/img/icon-facebook-black.svg">
+                            <p class="inline sm-left-padding"><b>Facebook</b> /hilaryhampton672</p>
+                        </div>
+                        <div class="row middle">
+                            <img class="inline icon-30 xs-padding" src="assets/img/icon-twitter-black.svg">
+                            <p class="inline sm-left-padding"><b>Twitter</b> @hifromhilary</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -157,7 +166,13 @@
         });
         //disabling scrolling
         //fullpage_api.setAllowScrolling(false);
-
+    </script>
+    <script>
+    $(".rotate").textrotator({
+      animation: "dissolve", // Options are: dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp, spin.
+      separator: ",", // If you don't want commas to be the separator, you can define a new separator here (|, &, * etc)
+      speed: 2000 // Delay in milliseconds
+    });
     </script>
 </body>
 </html>
