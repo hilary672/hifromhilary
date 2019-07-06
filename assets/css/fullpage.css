@@ -75,13 +75,13 @@ html.fp-enabled,
     opacity: 1 !important;
 }
 .fp-controlArrow.fp-prev {
-    right: 80px;
+    right: 100px;
     width: 0;
     border-width: 10px 15px 10px 0;
     border-color: transparent #000 transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 40px;
+    right: 60px;
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent #000;
 }
@@ -120,7 +120,7 @@ html.fp-enabled,
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    right: 120px !important;
+    right: 140px !important;
     margin: 0 auto !important;
 }
 .fp-slidesNav.fp-bottom {

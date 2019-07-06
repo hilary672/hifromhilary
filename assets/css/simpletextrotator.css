@@ -1,5 +1,6 @@
 .rotating {
   display: inline-block;
+    border-bottom: 1px solid #383b53;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
