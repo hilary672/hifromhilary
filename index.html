@@ -44,29 +44,29 @@
         </ul>
         <div id="fullpage"> 
             <div class="section white-bg primary">
-                <div class="slide" data-anchor="1about">
+                <div class="slide bg-image" data-anchor="1about" style="background-image: url(assets/img/background-1.png)">
                     <div class="row middle lg-padding">
-                        <h1>Hi, I'm Hilary.</h1>
-                        <h3>I'm a <span class="rotate">designer, frontend developer, creative director, nature lover, badass</span>.</h3>
+                        <h1>Hi, I'm Hilary</h1>
+                        <h3 id="iam" class="primary z-index">I'm a <span class="rotate underline">designer, frontend&nbsp;developer, creative&nbsp;director, nature&nbsp;lover, visual&nbsp;communicator</span>.</h3>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="slide bg-image" id="about-bio" data-anchor="about-bio" style="background-image: url(assets/img/background-2.png)">
                     <div class="sm-max-width row">
                         <div class="md-padding">
                             <h2>So, about me...</h2>
-                            <p>I spend my nine‑to‑five designing ___. After hours I love working with brands, and clients of all backgrounds. The rest of my time is spent in the beautiful Pacific Northwest (just outside Portland, OR). Home is where my pets are (dogs and cats) and I'm an outdoor junky who loves unplugging to spend some time in nature. I grew up in Northern California backpacking, hiking, skiing, and swimming. The only sport I follow religiously is motorcycle racing, and I learned to ride my own dirtbike when I was eleven. I believe great things never come from comfort zones, and good things come to those who hustle. I was blessed with amazing oopportunities that allowed me to learn my industry top‑to‑bottom.</p>
+                            <p>I spend my nine‑to‑five designing with brands and clients of all backgrounds. The rest of my time is spent in the beautiful Pacific Northwest (outside Portland, OR). Home is where my pets are (dogs + cats) and I'm an outdoor junky who loves unplugging to spend some time in nature. I grew up in Northern California backpacking, skiing, and swimming. The only sport I follow religiously is motorcycle racing, and I started riding my own dirtbike when I was eleven. I was blessed with amazing oopportunities that allowed me to learn my industry top‑to‑bottom. Great things never come from comfort zones, and good things come to those who hustle.</p>
                         </div>
                         <div class="xs-12 sm-5">
                         </div>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="slide bg-image" id="about-3" data-anchor="about-3" style="background-image: url(assets/img/background-3.png)">
                     <div class="max-width">
                         <h1>slide 3</h1>
                     </div>
                 </div>
             </div>
-            <div class="section white-bg">
+            <div class="section " >
                 <div class="slide" data-anchor="2edison">
                     <div class="max-width">
                         <h1>Edison Software</h1>
@@ -109,31 +109,39 @@
                 <div class="slide" data-anchor="4contact">
                     <div class="max-width">
                         <h1>Contact</h1>
-                        <div class="row middle">
-                            <img class="inline icon-30 xs-padding" src="assets/img/icon-insta-black.svg">
-                            <p class="inline sm-left-padding"><b>Instagram</b> @hifromhilary</p>
-                        </div>
-                        <div class="row middle">
-                            <img class="inline icon-30 xs-padding" src="assets/img/icon-linkedin-black.svg">
-                            <p class="inline sm-left-padding"><b>LinkedIn</b> /hilary-hampton</p>
-                        </div>
-                        <div class="row middle">
-                            <img class="inline icon-30 xs-padding" src="assets/img/icon-facebook-black.svg">
-                            <p class="inline sm-left-padding"><b>Facebook</b> /hilaryhampton672</p>
-                        </div>
-                        <div class="row middle">
-                            <img class="inline icon-30 xs-padding" src="assets/img/icon-twitter-black.svg">
-                            <p class="inline sm-left-padding"><b>Twitter</b> @hifromhilary</p>
-                        </div>
+                        <a target="_blank" href="">
+                            <div class="row middle">
+                                <img class="inline icon-30 xs-padding" src="assets/img/icon-insta-black.svg">
+                                <p class="inline sm-left-padding"><b>Instagram</b> @hifromhilary</p>
+                                <i class="material-icons inline">keyboard_arrow_right</i>
+                            </div>
+                        </a>
+                        <a target="_blank" href="">
+                            <div class="row middle">
+                                <img class="inline icon-30 xs-padding" src="assets/img/icon-linkedin-black.svg">
+                                <p class="inline sm-left-padding"><b>LinkedIn</b> /hilary-hampton</p>
+                                <i class="material-icons inline">keyboard_arrow_right</i>
+                            </div>
+                        </a>
+                        <a target="_blank" href="">
+                            <div class="row middle">
+                                <img class="inline icon-30 xs-padding" src="assets/img/icon-facebook-black.svg">
+                                <p class="inline sm-left-padding"><b>Facebook</b> /hilaryhampton672</p>
+                                <i class="material-icons inline">keyboard_arrow_right</i>
+                            </div>
+                        </a>
+                        <a target="_blank" href="">
+                            <div class="row middle">
+                                <img class="inline icon-30 xs-padding" src="assets/img/icon-twitter-black.svg">
+                                <p class="inline sm-left-padding"><b>Twitter</b> @hifromhilary</p>
+                                <i class="material-icons inline">keyboard_arrow_right</i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
     </div>
-    
-    
 
     <!--<script>
         $(document).ready(function(){ 
@@ -155,24 +163,31 @@
             menu: '#menu',
             lockAnchors: false,
             navigation: false,
-            navigationPosition: 'right',
+            //navigationPosition: 'right',
             //navigationTooltips: ['About', 'Edison', 'Left Hook', 'Contact'],
             showActiveTooltip: false,
+            touchSensitivity: 5,
             slidesNavigation: true,
             controlArrows: true,
             slidesNavPosition: 'bottom',
             //more
-            lazyLoading: true
+            lazyLoading: true,
+            fixedElements: '#iam'
         });
         //disabling scrolling
         //fullpage_api.setAllowScrolling(false);
     </script>
     <script>
     $(".rotate").textrotator({
-      animation: "dissolve", // Options are: dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp, spin.
+      animation: "flip", // Options are: dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp, spin.
       separator: ",", // If you don't want commas to be the separator, you can define a new separator here (|, &, * etc)
       speed: 2000 // Delay in milliseconds
     });
+    </script>
+    <script>
+        if ($("#about-bio").hasClass("active")) {
+          $("#iam").animate({right: "100px", top: "100px"}, 2000);
+        }
     </script>
 </body>
 </html>
