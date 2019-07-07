@@ -28,6 +28,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/simpletextrotator.css"/>
     <script type="text/javascript" src="assets/js/jquery.simple-text-rotator.js"></script> 
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="assets/js/fullpage.fadingEffect.min.js"></script>
     <script type="text/javascript" src="assets/js/fullpage.extensions.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/fullpage.css" />
@@ -36,27 +37,25 @@
 <body>
     
     <div class="">
-        <ul id="menu" class="">
-            <li data-menuanchor="1about" class="inline active"><a href="#1about" class="">About</a></li>
-            <li data-menuanchor="2edison" class="inline"><a href="#2edison" class="">Edison Software</a></li>
-            <li data-menuanchor="3lefthook" class="inline"><a href="#3lefthook" class="">Left Hook Design</a></li>
-            <li data-menuanchor="4contact" class="inline"><a href="#4contact" class="">Contact</a></li>
-        </ul>
+        <div id="nav" class="nav hide-for-small"></div>
+        <div id="nav-mobile" class="nav show-for-small"></div>
+        
         <div id="fullpage"> 
             <div class="section white-bg primary">
+                
                 <div class="slide bg-image" data-anchor="1about" style="background-image: url(assets/img/background-1.png)">
-                    <div class="row middle lg-padding">
+                    <div class="max-width middle md-padding">
                         <h1>Hi, I'm Hilary</h1>
-                        <h3 id="iam" class="primary z-index">I'm a <span class="rotate underline">designer, frontend&nbsp;developer, creative&nbsp;director, nature&nbsp;lover, visual&nbsp;communicator</span>.</h3>
+                        <div id="iam" class="sm-top-padding z-index">
+                            
+                        </div>
                     </div>
                 </div>
                 <div class="slide bg-image" id="about-bio" data-anchor="about-bio" style="background-image: url(assets/img/background-2.png)">
-                    <div class="sm-max-width row">
+                    <div class="max-width row">
                         <div class="md-padding">
-                            <h2>So, about me...</h2>
-                            <p>I spend my nine‑to‑five designing with brands and clients of all backgrounds. The rest of my time is spent in the beautiful Pacific Northwest (outside Portland, OR). Home is where my pets are (dogs + cats) and I'm an outdoor junky who loves unplugging to spend some time in nature. I grew up in Northern California backpacking, skiing, and swimming. The only sport I follow religiously is motorcycle racing, and I started riding my own dirtbike when I was eleven. I was blessed with amazing oopportunities that allowed me to learn my industry top‑to‑bottom. Great things never come from comfort zones, and good things come to those who hustle.</p>
-                        </div>
-                        <div class="xs-12 sm-5">
+                            <h3 class="primary sm-bottom-padding">I'm a&nbsp; <span class="rotate underline">designer, coder, badass, planner, techie</span>.</h3>
+                            <p>I design solutions to problems for brands and clients. Fluent in all things design – from small businesses and startup needs, to large corporations. </p>
                         </div>
                     </div>
                 </div>
@@ -149,6 +148,16 @@
         }); 
     </script>-->
     <script>
+        $("#nav").load("closet/nav.html");
+        $("#nav-mobile").load("closet/nav-mobile.html");
+    </script>
+    <script>
+        function menuList() {
+          var element = document.getElementById("menu-list");
+          element.classList.toggle("block");
+        }
+    </script>
+    <script>
         new fullpage('#fullpage', {
             fadingEffectKey: 'aGlmcm9taGlsYXJ5LmNvbV81ZkNabUZrYVc1blJXWm1aV04wN3Qy',
             //fadingEffect: 'sections',
@@ -156,6 +165,7 @@
             autoScrolling: true,
             scrollingSpeed: 500,
             scrollHorizontally: true,
+            scrollOverflow: true,
             continuousVertical: true,
             loopHorizontal: true,
             //navigation
@@ -172,7 +182,7 @@
             slidesNavPosition: 'bottom',
             //more
             lazyLoading: true,
-            fixedElements: '#iam'
+            //fixedElements: '#iam'
         });
         //disabling scrolling
         //fullpage_api.setAllowScrolling(false);
@@ -184,10 +194,14 @@
       speed: 2000 // Delay in milliseconds
     });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        if ($("#about-bio").hasClass("active")) {
-          $("#iam").animate({right: "100px", top: "100px"}, 2000);
-        }
+      AOS.init({
+        delay: 0,
+        duration: 1000,
+        easing: 'ease-in',
+      });
     </script>
+    
 </body>
 </html>

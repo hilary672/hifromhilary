@@ -214,7 +214,7 @@ h2, h3 {
     margin: 1.3 0 0.5em;
     line-height: 1.15em;
     font-family: 'Montserrat';
-    font-weight:700;
+    font-weight:800;
     width: 100%;
 }
 h4, h5, h6, {
@@ -234,7 +234,7 @@ h2 {
 }
 h3 {
   font-size: 1.414em/*1.999em*/;
-  font-weight: 200;
+  font-weight: 600;
 }
 h4 {
   font-size: 1.414em;
@@ -295,7 +295,15 @@ h5 {
         font-weight: 600;
     }
 }
-
+.nav {
+    position: absolute;
+    z-index: 10;
+}
+.block {
+    display: block !important;
+    position: relative;
+    z-index: 2;
+}
 a {
     @include transition;
     color: $primary;
@@ -495,7 +503,7 @@ opacity: 1; /* Firefox */
 .card {
     @include border-radius;
     @include shadow-light;
-    background: #fff;
+    background: $white ;
 }
 .absolute{
     display: block;
@@ -511,34 +519,46 @@ opacity: 1; /* Firefox */
     z-index: 10;
 }
 .rise{
-    @include transition;}
+    @include transition;
+}
 .rise:hover  {
     @include rise;
-    @include transition;}
+    @include transition;
+}
 i.sm-icon {
-    font-size: 22px !important;}
+    font-size: 22px !important;
+}
 i.material-icons {
     font-size: 36px !important;
-    display: inline-block !important;}
+    display: inline-block !important;
+}
 .opacity{
-    @include opacity;}
+    @include opacity;
+}
 .bottom-border {
-    border-bottom: solid 1px rgba(0,0,0,.15);}
+    border-bottom: solid 1px rgba(0,0,0,.15);
+}
 .border-left {
-    border-left: solid 1px $grey;}
+    border-left: solid 1px $grey;
+}
 .border-right {
-    border-right: solid 1px $grey;}
-
+    border-right: solid 1px $grey;
+}
 .circle {
-    @include circle;}
+    @include circle;
+}
 .shadow{
-    @include shadow;}
+    @include shadow;
+}
 .shadow-light{
-    @include shadow-light;}
+    @include shadow-light;
+}
 .opacity{
-    @include opacity;}
+    @include opacity;
+}
 .border-radius {
-    @include border-radius;}
+    @include border-radius;
+}
 
 /* heros */
 .sm-hero{
@@ -562,113 +582,154 @@ i.material-icons {
 /* sections */
 .sm-section{
   padding-top: 100px;
-  padding-bottom: 100px;}
+  padding-bottom: 100px;
+}
 .md-section{
   padding-top: 180px;
-  padding-bottom: 180px;}
+  padding-bottom: 180px;
+}
 .lg-section{
   padding-top: 240px;
-  padding-bottom: 240px;}
+  padding-bottom: 240px;
+}
 
 /* padding and margins */
 .vertical-center {
-	margin: auto 0;}
+	margin: auto 0;
+}
 .center {
-	margin: auto;}
+	margin: auto;
+}
 .right {
 	align-content: flex-end;
-    text-align: right;}
-
+    text-align: right;
+}
 .no-margin{
-    margin: 0 !important;}
-
+    margin: 0 !important;
+}
 .xs-margin{
-    margin: $xs; }
+    margin: $xs; 
+}
 .sm-margin{
-    margin: $sm; }
+    margin: $sm; 
+}
 .md-margin{
-    margin: $md; }
+    margin: $md; 
+}
 .lg-margin{
-    margin: $lg; }
+    margin: $lg; 
+}
 .xl-margin{
-    margin: $xl; }
-
+    margin: $xl; 
+}
 .no-padding{
-    padding: 0 !important;}
-
+    padding: 0 !important;
+}
 .no-bottom-padding {
-    padding-bottom: 0 !important;}
+    padding-bottom: 0 !important;
+}
 .no-top-padding {
-    padding-top: 0 !important;}
+    padding-top: 0 !important;
+}
 .no-left-padding {
-    padding-left: 0 !important;}
+    padding-left: 0 !important;
+}
 .no-right-padding {
-    padding-right: 0 !important;}
+    padding-right: 0 !important;
+}
 .no-overflow {
-    overflow: hidden;}
+    overflow: hidden;
+}
 
 .xs-padding{
-    padding: $xs; }
+    padding: $xs; 
+}
 .xs-top-padding{
-    padding-top: $xs;}
+    padding-top: $xs;
+}
 .xs-right-padding{
-    padding-right: $xs;}
+    padding-right: $xs;
+}
 .xs-bottom-padding{
-    padding-bottom: $xs;}
+    padding-bottom: $xs;
+}
 .xs-left-padding{
-    padding-left: $xs;}
+    padding-left: $xs;
+}
 
 .sm-padding{
-    padding: $sm; }
+    padding: $sm; 
+}
 .sm-top-padding{
-    padding-top: $sm;}
+    padding-top: $sm;
+}
 .sm-right-padding{
-    padding-right: $sm;}
+    padding-right: $sm;
+}
 .sm-bottom-padding{
-    padding-bottom: $sm;}
+    padding-bottom: $sm;
+}
 .sm-left-padding{
-    padding-left: $sm;}
+    padding-left: $sm;
+}
 
 .md-padding{
-    padding: $md; }
+    padding: $md; 
+}
 .md-top-padding{
-    padding-top: $md;}
+    padding-top: $md;
+}
 .md-right-padding{
-    padding-right: $md;}
+    padding-right: $md;
+}
 .md-bottom-padding{
-    padding-bottom: $md;}
+    padding-bottom: $md;
+}
 .md-left-padding{
-    padding-left: $md;}
+    padding-left: $md;
+}
 
 .lg-padding{
-    padding: $lg; }
+    padding: $lg; 
+}
 .lg-top-padding{
-    padding-top: $lg;}
+    padding-top: $lg;
+}
 .lg-right-padding{
-    padding-right: $lg;}
+    padding-right: $lg;
+}
 .lg-bottom-padding{
-    padding-bottom: $lg;}
+    padding-bottom: $lg;
+}
 .lg-left-padding{
-    padding-left: $lg;}
+    padding-left: $lg;
+}
 
 .xl-padding{
-    padding: $xl; }
+    padding: $xl; 
+}
 .xl-top-padding{
-    padding-top: $xl;}
+    padding-top: $xl;
+}
 .xl-right-padding{
-    padding-right: $xl;}
+    padding-right: $xl;
+}
 .xl-bottom-padding{
-    padding-bottom: $xl;}
+    padding-bottom: $xl;
+}
 .xl-left-padding{
-    padding-left: $xl;}
+    padding-left: $xl;
+}
 
 /* margin lips */
 .lip-top{
     position: relative;
-    top: -100px !important;}
+    top: -100px !important;
+}
 .lip-bottom{
     position: relative;
-    top: 100px !important;}
+    top: 100px !important;
+}
 .float-left {
     position: relative;
     float: left;
@@ -740,74 +801,111 @@ i.material-icons {
 .sm-max-width{
     width: 86%;
     max-width:700px;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 .max-width{
     width: 96%;
     max-width:1100px;
-    margin: auto;}
+    margin: auto;
+}
 .half-width {
 	width: 50%;
-	margin: 0 auto;	}
+	margin: 0 auto;	
+}
 .three-quarter-width {
 	width: 75%;
-	margin:0 auto;	}
+	margin:0 auto;	
+}
 .full-width{
-	width: 100%;}
+	width: 100%;
+}
 .full-height{
-    height:100%;}
+    height:100%;
+}
 .undersized{
-    @include undersized;}
+    @include undersized;
+}
 .oversized{
-    @include oversized;}
+    @include oversized;
+}
 .oversized-right{
-    @include oversized-right;}
+    @include oversized-right;
+}
+.hide-for-small {
+    display: block;
+}
+.show-for-small {
+    display: none !important;
+}
 
-@media only screen and (max-width: 466px) {
+@media only screen and (max-width: 780px) {
     h1 {
-        font-size: 3.7em;}
+        font-size: 2.5em;
+    }
+    .hide-for-small {
+        display: none !important;
+    }
+    .show-for-small {
+        display: block !important;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .oversized {
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
-        transform: scale(1);}
+        transform: scale(1);
+    }
     .oversized-right {
         -ms-transform: translateX(20%) translateY(10%) scale(1.4);
         -webkit-transform: translateX(20%) translateY(10%) scale(1.4);
-        transform: translateX(20%) translateY(10%) scale(1.4);}
+        transform: translateX(20%) translateY(10%) scale(1.4);
+    }
     .bg-image-right {
         background-repeat: no-repeat;
         background-position: bottom center;
-        background-size: 90%;}
+        background-size: 90%;
+    }
     .bg-image-left {
         background-repeat: no-repeat;
         background-position: 0 bottom; 
-        background-size: contain;}
+        background-size: contain;
+    }
     .lg-padding{
-        padding: calc(#{$lg} * 0.7);}
+        padding: calc(#{$lg} * 0.7);
+    }
     .lg-top-padding{
-        padding-top: calc(#{$lg} * 0.7);}
+        padding-top: calc(#{$lg} * 0.7);
+    }
     .lg-right-padding{
-        padding-right: calc(#{$lg} * 0.7);}
+        padding-right: calc(#{$lg} * 0.7);
+    }
     .lg-bottom-padding{
-        padding-bottom: calc(#{$lg} * 0.7);}
+        padding-bottom: calc(#{$lg} * 0.7);
+    }
     .lg-left-padding{
-        padding-left: calc(#{$lg} * 0.7);}
+        padding-left: calc(#{$lg} * 0.7);
+    }
 
     .xl-padding{
-        padding: calc(#{$xl} * 0.7);}
+        padding: calc(#{$xl} * 0.7);
+    }
     .xl-top-padding{
-        padding-top: calc(#{$xl} * 0.7);}
+        padding-top: calc(#{$xl} * 0.7);
+    }
     .xl-right-padding{
-        padding-right: calc(#{$xl} * 0.7);}
+        padding-right: calc(#{$xl} * 0.7);
+    }
     .xl-bottom-padding{
-        padding-bottom: calc(#{$xl} * 0.7);}
+        padding-bottom: calc(#{$xl} * 0.7);
+    }
     .xl-left-padding{
-        padding-left: calc(#{$xl} * 0.7);}
+        padding-left: calc(#{$xl} * 0.7);
+    }
     .bg-hero {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: scroll !important;
-        z-index: 0;}
+        z-index: 0;
+    }
 }

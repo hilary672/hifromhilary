@@ -73,17 +73,24 @@ html.fp-enabled,
 }
 .fp-controlArrow.fp-prev:hover, .fp-controlArrow.fp-next:hover {
     opacity: 1 !important;
+    transform: scale(1.5);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 .fp-controlArrow.fp-prev {
     right: 100px;
     width: 0;
     border-width: 10px 15px 10px 0;
     border-color: transparent #000 transparent transparent;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 .fp-controlArrow.fp-next {
     right: 60px;
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent #000;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 .fp-scrollable {
     overflow: hidden;
