@@ -215,13 +215,11 @@ h2, h3 {
     line-height: 1.15em;
     font-family: 'Montserrat';
     font-weight:800;
-    width: 100%;
 }
 h4, h5, h6, {
     color: $primary;
     margin: 1.3 0 0.5em;
     line-height: 1.15em;
-    width: 100%;
 }
 h1 {
     color: $black;
@@ -233,7 +231,7 @@ h2 {
   font-size: 2.5em;
 }
 h3 {
-  font-size: 1.414em/*1.999em*/;
+  font-size: 1.36em/*1.999em*/;
   font-weight: 600;
 }
 h4 {
@@ -269,10 +267,18 @@ h5 {
 #menu {
     list-style-type: none !important;
     position: fixed;
-    top: 20px;
+    top: 10px;
     left: 20px;
     z-index: 1000;
-    
+}
+#menu-list {
+    list-style-type: none !important;
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    z-index: 1000;
+}
+#menu, #menu-list {
     li {
         a {
         @include transition;
@@ -529,7 +535,6 @@ i.sm-icon {
     font-size: 22px !important;
 }
 i.material-icons {
-    font-size: 36px !important;
     display: inline-block !important;
 }
 .opacity{
