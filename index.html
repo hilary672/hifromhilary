@@ -42,24 +42,16 @@
         
         <div id="fullpage"> 
             <div class="section white-bg primary">
-                
                 <div class="slide bg-image" data-anchor="1about" style="background-image: url(assets/img/background-1.png)">
-                    <div class="max-width middle md-padding">
+                    <div class="sm-max-width middle primary">
                         <h1>Hi, I'm Hilary</h1>
-                        <div class="sm-top-padding z-index">
-                            
-                        </div>
+                        <h3 class="inline sm-bottom-padding">I'm a&nbsp;</h3> 
+                        <h3 class="inline"><span class="block rotate underline" style="width: 200px;">designer, coder, planner, techie, badass</span></h3>
+                        <h3 class="inline">.</h3>
+                        <p>I design solutions to problems for brands and clients. Fluent in all things design and trained in Silicon Valley. Great designs start with well defined problems, and lots of planning. </p>
                     </div>
                 </div>
-                <div class="slide bg-image" id="about-bio" data-anchor="about-bio" style="background-image: url(assets/img/background-2.png)">
-                    <div class="sm-max-width row">
-                        <div class="md-padding">
-                            <h3 class="primary sm-bottom-padding">I'm a&nbsp; <span class="rotate underline">designer, coder, badass, planner, techie</span>.</h3>
-                            <p>I design solutions to problems for brands and clients. Fluent in all things design – from small businesses and startup needs, and large corporations. Great designs start with well defined problems, and lots of planning. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide bg-image" id="about-3" data-anchor="about-3" style="background-image: url(assets/img/background-3.png)">
+                <!--<div class="slide bg-image" id="about-3" data-anchor="about-3" style="background-image: url(assets/img/background-3.png)">
                     <div class="max-width row">
                         <div class="md-padding">
                             <div class="row middle xs-padding sm-top-padding">
@@ -88,50 +80,25 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
-            <div class="section " >
+            <div class="section light-grey-bg" >
                 <div class="slide" data-anchor="2edison">
-                    <div class="max-width md-padding">
+                    <div class="sm-max-width md-padding">
                         <h1>Edison Software</h1>
-                    </div>
-                </div>
-                <div class="slide" data-anchor="">
-                    <div class="max-width md-padding">
-                        <h1>slide 2</h1>
-                    </div>
-                </div>
-                <div class="slide" data-anchor="">
-                    <div class="max-width md-padding">
-                        <h1>slide 3</h1>
-                    </div>
-                </div>
-                <div class="slide" data-anchor="">
-                    <div class="max-width">
-                        <h1>slide 4</h1>
                     </div>
                 </div>
             </div>
             <div class="section white-bg primary">
                 <div class="slide" data-anchor="3lefthook">
-                    <div class="max-width md-padding">
+                    <div class="sm-max-width md-padding">
                         <h1>Left Hook</h1>
-                    </div>
-                </div>
-                <div class="slide" data-anchor="">
-                    <div class="max-width md-padding">
-                        <h1>slide 2</h1>
-                    </div>
-                </div>
-                <div class="slide" data-anchor="">
-                    <div class="max-width md-padding">
-                        <h1>slide 3</h1>
                     </div>
                 </div>
             </div>
             <div class="section white-bg">
                 <div class="slide" data-anchor="4contact">
-                    <div class="max-width md-padding">
+                    <div class="sm-max-width">
                         <h1>Contact</h1>
                         <a target="_blank" href="">
                             <div class="row middle">
@@ -197,14 +164,14 @@
             anchors:['1about', '2edison', '3lefthook', '4contact'],
             menu: ['#menu', '#menu-list'],
             lockAnchors: false,
-            navigation: false,
-            //navigationPosition: 'right',
-            //navigationTooltips: ['About', 'Edison', 'Left Hook', 'Contact'],
+            navigation: true,
+            navigationPosition: 'left',
+            navigationTooltips: ['About', 'Edison', 'Left Hook', 'Contact'],
             showActiveTooltip: false,
-            touchSensitivity: 5,
-            slidesNavigation: true,
-            controlArrows: true,
-            slidesNavPosition: 'bottom',
+            touchSensitivity: 25,
+            //slidesNavigation: false,
+            //controlArrows: true,
+            //slidesNavPosition: 'bottom',
             //more
             lazyLoading: true,
             //fixedElements: '#iam'
